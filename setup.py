@@ -17,5 +17,6 @@ setup(
         "scikit-image>=0.19.1",
         "lipstick",
         "numpy>=1.22.0",
+        "datajoint"
     ],
 )
