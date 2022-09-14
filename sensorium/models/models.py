@@ -51,6 +51,7 @@ def stacked_core_full_gauss_readout(
     shifter_bias=True,
     hidden_padding=None,
     core_bias=False,
+    independent_bn_bias=False
 ):
     """
     Model class of a stacked2dCore (from neuralpredictors) and a pointpooled (spatial transformer) readout
@@ -121,6 +122,7 @@ def stacked_core_full_gauss_readout(
         attention_conv=attention_conv,
         hidden_padding=hidden_padding,
         use_avg_reg=use_avg_reg,
+        independent_bn_bias=independent_bn_bias
     )
 
     in_shapes_dict = {
@@ -209,6 +211,7 @@ def rot_equi_core_full_gauss_readout(
     shifter_bias=True,
     hidden_padding=None,
     core_bias=False,
+    independent_bn_bias=False
 ):
     """
     Model class of a stacked2dCore (from neuralpredictors) and a pointpooled (spatial transformer) readout
@@ -280,6 +283,7 @@ def rot_equi_core_full_gauss_readout(
         attention_conv=attention_conv,
         hidden_padding=hidden_padding,
         use_avg_reg=use_avg_reg,
+        independent_bn_bias=independent_bn_bias
     )
 
     in_shapes_dict = {

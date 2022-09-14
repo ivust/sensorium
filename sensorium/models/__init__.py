@@ -1,1 +1,2 @@
 from .models import stacked_core_full_gauss_readout
+from .models import rot_equi_core_full_gauss_readout
